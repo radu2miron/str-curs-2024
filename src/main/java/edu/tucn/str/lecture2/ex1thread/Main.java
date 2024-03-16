@@ -6,8 +6,8 @@ package edu.tucn.str.lecture2.ex1thread;
  */
 public class Main {
     public static void main(String[] args) {
-        MyThread thread1 = new MyThread();
-        MyThread thread2 = new MyThread();
+        MyThread thread1 = new MyThread("New York");
+        MyThread thread2 = new MyThread("Paris");
 
         // threads should not be started with run()!!!
 //        thread1.run();
