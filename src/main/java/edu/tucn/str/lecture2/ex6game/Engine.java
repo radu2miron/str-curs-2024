@@ -20,7 +20,7 @@ public class Engine extends Thread {
     @Override
     public void run() {
         while (this.enemy.getY() < 720) {
-            SwingUtilities.invokeLater(() -> this.enemy.setLocation(this.enemy.getX(), this.enemy.getY() + 2 + speed));
+            this.enemy.setLocation(this.enemy.getX(), this.enemy.getY() + 2 + speed);
 
             try {
                 Thread.sleep(100);
