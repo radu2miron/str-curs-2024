@@ -28,7 +28,7 @@ public class Win extends JFrame {
 
         Lock lock = new ReentrantLock();
         List<Racer> racerList = Arrays.asList(new Racer(lock, 82), new Racer(lock, 80),
-                new Racer(lock, 80), new Racer(lock, 80));
+                new Racer(lock, 80), new Racer(lock, 81));
 
         int xInc = this.getWidth() / (racerList.size() + 1);
 

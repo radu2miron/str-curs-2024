@@ -12,6 +12,10 @@ public class ActivityUtils {
             i++;
             i--;
         }
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+        }
     }
 
     public static synchronized void doSyncActivity(String name, int k) {

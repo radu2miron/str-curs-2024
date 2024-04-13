@@ -8,7 +8,7 @@ import java.util.concurrent.Semaphore;
  */
 public class Main {
     public static void main(String[] args) {
-        Semaphore semaphore = new Semaphore(1, true);
+        Semaphore semaphore = new Semaphore(2, true);
         new ThreadSemaphore(semaphore).start();
         new ThreadSemaphore(semaphore).start();
         new ThreadSemaphore(semaphore).start();

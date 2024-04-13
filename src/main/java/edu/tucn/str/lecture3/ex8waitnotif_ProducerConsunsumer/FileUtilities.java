@@ -14,7 +14,7 @@ import java.util.Map;
  * @version 1
  */
 public class FileUtilities {
-    private static final File FILE = new File("lecture5_files/file.txt");
+    private static final File FILE = new File("lecture3_files/file.txt");
 
     private FileUtilities() {
     }

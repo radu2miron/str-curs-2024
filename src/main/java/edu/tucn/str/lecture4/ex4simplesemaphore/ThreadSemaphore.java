@@ -27,9 +27,6 @@ public class ThreadSemaphore extends Thread {
             semaphore.release();
         }
 
-        //OR
-        //ActivityUtils.doSyncActivity(Thread.currentThread().getName() + " - A2", 0);
-
         ActivityUtils.doActivity(Thread.currentThread().getName() + " - A3", 0);
     }
 }

@@ -11,6 +11,5 @@ public class Main {
         Singleton singleton3 = Singleton.getInstance();
 
         //todo: try to break the non-thread safe implementation of the Singleton with multiple threads; maybe try and use ContDownLatch
-
     }
 }
