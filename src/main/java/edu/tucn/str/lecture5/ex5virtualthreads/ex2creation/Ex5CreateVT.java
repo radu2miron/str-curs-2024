@@ -12,7 +12,7 @@ import java.util.stream.IntStream;
  * @author Radu Miron
  * @version 1
  */
-public class Ex5CreateVT {
+public class Ex5CreateVT { // FIRE AND FORGET EXAMPLE
     public static void main(String[] args) throws InterruptedException {
         ThreadFactory vtThreadFactory = Thread.ofVirtual().factory();
         ExecutorService vtExecutor = Executors.newThreadPerTaskExecutor(vtThreadFactory);

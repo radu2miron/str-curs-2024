@@ -64,7 +64,8 @@ public class WeatherApiUtils {
     }
 
     public static void main(String[] args) throws Exception {
-        System.out.println(getTemperature(City.LONDON));
+        System.out.println(getTemperature(City.SATU_MARE));
         System.out.println(getTemperature(City.CLUJ_NAPOCA));
+        System.out.println(getTemperature(City.CHISINAU));
     }
 }

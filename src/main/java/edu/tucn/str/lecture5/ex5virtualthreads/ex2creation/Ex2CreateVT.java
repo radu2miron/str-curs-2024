@@ -18,6 +18,9 @@ public class Ex2CreateVT {
         Thread vt3 = Thread.ofVirtual()
                            .name("Vasile")
                            .start(Utils::print10Messages);
+        // () -> Utils.print10Messages() - name: lambda expression
+        // Utils::print10Messages - name: method reference
+        // () -> Utils.print10Messages() and Utils::print10Messages do the exact same thing
 
         // join threads
         vt1.join();

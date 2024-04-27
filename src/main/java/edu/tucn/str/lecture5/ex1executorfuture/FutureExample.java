@@ -11,8 +11,10 @@ import java.util.concurrent.*;
 
 public class FutureExample {
     public static void main(String[] args) {
+        long t1 = System.currentTimeMillis();
+
         // Create an ExecutorService with a fixed-size thread pool
-        ExecutorService executorService = Executors.newFixedThreadPool(3);
+        ExecutorService executorService = Executors.newFixedThreadPool(5);
 
         // List to store Future objects
         List<Future<String>> futureResults = new ArrayList<>();
@@ -38,16 +40,9 @@ public class FutureExample {
 
         // Shutdown the executor when done
         executorService.shutdown();
-    }
-}
 
-class MyCallableTask implements Callable<String> {
-    @Override
-    public String call() throws Exception {
-        // Simulate some time-consuming task
-        Thread.sleep(2000);
-
-        return "Task completed";
+        long t2 = System.currentTimeMillis();
+        System.out.println("Time: " + (t2 - t1) / 1000 + " sec.");
     }
 }
 

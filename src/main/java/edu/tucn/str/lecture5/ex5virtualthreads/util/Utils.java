@@ -10,8 +10,4 @@ public class Utils {
             System.out.println(Thread.currentThread() + " -> Msg. num.  " + i);
         }
     }
-
-    public static int numberOfCores() {
-        return Runtime.getRuntime().availableProcessors();
-    }
 }

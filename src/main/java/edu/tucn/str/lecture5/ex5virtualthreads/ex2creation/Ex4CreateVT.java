@@ -14,11 +14,12 @@ import java.util.stream.IntStream;
  * @author Radu Miron
  * @version 1
  */
-public class Ex4CreateVT {
+public class Ex4CreateVT { // FORK-JOIN EXAMPLE
     public static void main(String[] args) {
         List<Future<Integer>> futureValues = new ArrayList<>();
 
         ExecutorService vtExecutor = Executors.newVirtualThreadPerTaskExecutor();
+
         IntStream.range(0, 10).forEach(i ->
                 futureValues.add(
                         vtExecutor.submit(
